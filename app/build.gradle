@@ -17,6 +17,13 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
+    buildFeatures {
+
+        dataBinding true
+
+        // for view binding:
+        // viewBinding true
+    }
     buildTypes {
         release {
             minifyEnabled false
@@ -42,4 +49,8 @@ dependencies {
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+    //. If you're using AndroidX, add the following dependency:
+    implementation "androidx.constraintlayout:constraintlayout:2.0.0-beta1"
+
 }
